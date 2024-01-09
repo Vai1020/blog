@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src:url('Roboto-ThinItalic-webfont.woff') format('woff'),
+      
+}
+:root {
+  --font: "Roboto", serif;
+}
+:root {
+  font: 20px/1.2 var(--font);
+}
+
+body,
+body * {
+  margin: unset;
+  box-sizing: unset;
+  padding: unset;
+  font-size: unset;
+  color: unset;
+  text-decoration: unset;
+}
+
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 48px [start] 120px 480px 120px [end] 48px 1fr;
+  padding: 48px 0;
+}
+
+article * {
+  grid-column: start / end;
+}
+
+@media (max-width: 816px) {
+  article {
+    grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;
+  }
+}
+
+h1,
+p {
+  margin-bottom: 2.4rem;
+}
+
+h1 {
+  font: 700 2rem/1.2 var(--font);
+  color: hsl(000, 000%, 33%);
+}
+
+time {
+  font: 700 1rem/1.2 var(--font);
+  color: hsl(250, 100%, 83%);
+}
+p {
+  font: 400 1rem/1.5 var(--font);
+  color: hsl(000, 000%, 33%);
+}
+
+a {
+  box-shadow: inset 0 -0.25em hsl(111, 89%, 53%);
+}
+
+@media (max-width: 816px) {
+  :root {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  :root {
+    font-size: 16px;
+  }
+}
+

@@ -1,0 +1,94 @@
+main{
+  display: flex;
+  flex-direction: column;
+  max-width: 780px;
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
+.fcc-btn{
+  background-color: #71BC2F;
+}
+.fcc-del{
+  background-color: #ff0000;
+}
+.fcc-up{
+  background-color: #fb9902;
+}
+.fcc-log{
+  background-color: black;
+}
+.fcc-btn,.fcc-del,.fcc-up ,.fcc-log{
+  color: white;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+.fcc-btn:hover {
+  background-color: #199319 ;
+}
+.fcc-up:hover{
+  background-color: #ff7f00;
+}
+.fcc-del:hover{
+  background-color: #a40000;
+}
+article{
+  display: flex;
+  align-items: flex-start;
+}
+#heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+
+#heading h1 span{
+  font-size: 1em;
+  color: #71BC2F;
+}
+article{
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 20px;
+  padding-bottom:20px;
+}
+article img{
+  margin-right: 15px;
+  width: 50%;
+}
+span{
+  font-size: 11px;
+}
+p{
+  font-size: 13px;
+}
+h2{
+  margin: 0;
+  padding: 0;
+  line-height:1em;
+}
+.button{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 779px){
+  main{
+      max-width: 90%;
+      margin: 0 auto;
+  }
+  article{
+      flex-direction: column;
+  }
+  article img{
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+@media (max-width:410px) {
+  .fcc-btn,.fcc-del,.fcc-up {
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+  }
+}

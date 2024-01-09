@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/view.css' %}">
+    <title>{{blog.title}}</title>
+</head>
+<body>
+  
+  <article id="the-whale">
+    <h1>
+      <a href="#">{{blog.title}}</a>
+    </h1>
+  
+    <time datetime="14-06-1851">{{blog.post_date}}</time>
+    <p>{{blog.body|safe}}</p>
+  
+    
+  </article>
+  
+</body>
+</html>
