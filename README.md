@@ -1,4 +1,4 @@
-Blog Application Implementation images
+# Blog Application
 
 ![Screenshot (7224)](https://github.com/Vai1020/blog/assets/102492742/73ecc5f2-e101-460e-a520-8641deec633a)
 ![Screenshot (7225)](https://github.com/Vai1020/blog/assets/102492742/0a118498-90f9-4dc5-8f3f-c52569cd8c4a)
